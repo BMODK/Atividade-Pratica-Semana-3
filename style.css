@@ -1,0 +1,140 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#inicio {
+    background-color: #e0f7fa;
+}
+
+/* azul claro */
+#reinos {
+    background-color: #ffe0b2;
+}
+
+/* laranja claro */
+#dimensoes {
+    background-color: #d1c4e9;
+}
+
+/* roxo claro */
+#personagens {
+    background-color: #c8e6c9;
+}
+
+/* verde claro */
+#contato {
+    background-color: #fff3e0;
+}
+
+/* bege claro */
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #fdf6e3;
+    /* fundo claro */
+    color: #333;
+    line-height: 1.6;
+}
+
+/* ===== Header ===== */
+header {
+    background-color: #ffcc00;
+    /* amarelinho alegre */
+    padding: 2px;
+    text-align: center;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+main {
+    margin-top: 120px;
+    /* evita sobreposição do menu */
+}
+
+header h1 {
+    font-size: 2.5rem;
+    color: #222;
+}
+
+nav ul {
+    list-style: none;
+    margin-top: 10px;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #ff6600;
+    /* cor quando passa o mouse */
+}
+
+/* ===== Seções ===== */
+section {
+    padding: 40px 20px;
+}
+
+section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-align: center;
+}/* Faz os artigos ficarem em linha */
+section#reinos,
+section#dimensoes,
+section#personagens {
+    display: flex;
+    flex-wrap: wrap;       /* quebra linha se não couber na tela */
+    justify-content: center; /* centraliza os artigos */
+    gap: 20px;             /* espaçamento entre eles */
+}
+/* ===== Cards (para reinos e dimensões) ===== */
+article {
+    background-color: #fff;
+    border: 2px solid #ddd;
+    border-radius: 12px;
+    padding: 20px;
+    margin: 15px auto;
+    max-width: 600px;
+    text-align: center;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+article:hover {
+    transform: scale(1.03);
+    /* animação leve ao passar o mouse */
+}
+article img {
+    width: 100%;
+    max-width: auto;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+article {
+    flex: 1 1 250px;       /* cresce, encolhe e tem base de 250px */
+    max-width: 300px;      /* largura máxima do card */
+    text-align: center;
+}
+/* ===== Footer ===== */
+footer {
+    background-color: #222;
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+}
